@@ -1,0 +1,364 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AmmoCounter V1 NERF Dart Counter - www.AmmoCounter.com</title>
+    <meta name="description" content="Ammo counter for darts, disks or foam balls, can be retrofitted into most NERF guns. This kit was created for experienced modders, that need an counter to keep track of their ammo. The kit can also be fitted into a number of scopes, barrel extensions and blaster shells.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="css/youmax.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body>
+  
+  <!-- Facebook Embed -->
+  <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=140435968844";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- /Facebook Embed -->
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+		    <div class="hidden-xs">
+		    	<a class="navbar-brand" href="http://ammocounter.com/"><img src="img/logo.png" alt="AmmoCounter Logo" width="145" height="58">
+	        </a>
+	      </div>
+	      <div class="visible-xs">
+		    	<a class="navbar-brand" href="http://ammocounter.com/"><img src="img/logo.png" alt="AmmoCounter Logo" width="90" height="36">
+	        </a>
+	      </div>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://www.etsy.com/shop/AmmoCounter" target="_blank">Etsy Shop</a></li>
+            <li><a href="https://www.facebook.com/ammocounter" target="_blank">Facebook Fans</a></li>
+            <li><a href="https://www.youtube.com/c/ammocounter/?sub_confirmation=1" target="_blank">YouTube Channel</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+  	    <div class="item active">
+	       <a href="http://bit.ly/ammocounter" target="_blank"><img class="img-responsive" src="img/hero-banner.jpg" alt="AmmoCounter Custom Scope"></a>
+	    </div>
+	    <div class="item">
+	       <a href="http://etsy.me/29VY1Jl" target="_blank"><img class="img-responsive" src="img/hero-banner-2.jpg" alt="AmmoCounter Nerf Cam Upgrade"></a>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#hero-carousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#hero-carousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+    	<h2>AmmoCounter Shop</h2>
+      <p>Ammo counter for NERF darts, disks or foam balls, can be retrofitted into most blaster shells and scopes. This kit was created for modders that need an counter to keep track of their ammo.</p>
+      
+      <div id="shop">
+        <!-- Insert Etsy Products Here -->
+      </div> 
+    </div>
+  </div>
+
+  <div class="container">
+
+  	<div class="row">
+  	  <div class="youmax"></div>
+  	</div>
+
+  	<hr>
+
+    <div class="row">
+      <div class="col-md-9">
+        <h4>Latest AmmoCounter V1 Arduino Sketch</h4>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-default btn-lg" href="https://github.com/nathanieldeal/AmmoCounter-V1/archive/master.zip" role="button">Download Zip &raquo;</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+    	<div class="col-md-9">
+	      <h3>FAQ's</h3>
+	      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingZero">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="false" aria-controls="collapsZero">
+	                What comes in the AmmoCounter V1 kit?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseZero" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingZero">
+	            <div class="panel-body">
+	            	<div class="col-md-6">		         
+	                	<img class="img-responsive img-thumbnail" style="margin-bottom:12px;" src="img/ammo-counter-2.jpg" alt="Ammo Counter Assembled">
+      					<h4>The <u>unassembled kit</u> comes with the following parts:</h4>
+      					<ul class="list-unstyled">
+      						<li>A LED PCB</li>
+      						<li>A Shift Register PCB</li>
+      						<li>2 Digit 7 Segment LED (Blue)</li>
+      						<li>A 16 Pin Ribbon (Length can vary)</li>
+      						<li>Two 16 Pin Connectors</li>
+      						<li>Fourteen 330 Ohm Resistors</li>
+      						<li>Five Male header pins</li>
+      						<li>Ten Female Jumper Wires</li>
+							<li class="visible-xs">&nbsp;</li>
+      					</ul>                  
+      				</div>
+      				<div class="col-md-6">
+                		<img class="img-responsive img-thumbnail" style="margin-bottom:12px;" src="img/ammo-counter-3.jpg" alt="Ammo Counter Unassembled">
+      					<h4>The <u>assembled kit</u> comes with the following parts:</h4>
+      					<ul class="list-unstyled">
+      						<li>An assembled LED board</li>
+      						<li>An assembled Shift Register board</li>
+      						<li>A 16 Pin Ribbon (About 3”)</li>
+      						<li>Ten Female Jumper Wires</li>
+							<li class="hidden-xs">&nbsp;</li>
+							<li class="hidden-xs">&nbsp;</li>
+							<li class="hidden-xs">&nbsp;</li>
+							<li class="hidden-xs">&nbsp;</li>
+						</ul>  
+      				</div>
+	  				<div class="col-md-12">
+      					<br>
+		                <p>Full overview and assembly video is available on <a href="https://www.youtube.com/watch?v=6iZIyM2XtUQ" target="_blank">Youtube</a>. </p>
+      				</div>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingOne">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+	                What else do I need to purchase to use the ammo counter?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+	            <div class="panel-body">
+	              <p>You'll need an Arduino, a power source and a counting mechanism in addition to the AmmoCounter kit.
+	              I recommend an Arduino Pro Mini or Pro Micro.</p>
+	              <p>You'll also need to setup a trigger mechanism (IR Beam or Lever Switch) and a battery source. These components will very depending on your blaster/dart setup.</p> 
+	              <p>Most of these parts can be found on the <a href="https://www.sparkfun.com/wish_lists/73042" target="_blank">Sparkfun Parts List</a>.</p>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingTwo">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	                Can I change the startup counter number?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	            <div class="panel-body">
+	              Yes, you can program the counter to start at any number. <br />
+	              You can also use a switch to change the count to 6, 10, 12, 15, 18, 22, 25 and 35 counts depending on the clip size in your blaster.
+	            </div>
+	          </div>
+	        </div>
+	        
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingThree">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	                How does the counter count the ammo?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	            <div class="panel-body">
+	              There are various ways to count ammo. The most common two are IR dectors and lever switches. An IR detector requires that you place an IR beam into the barrel or barrel extention. Once the beam is broken, the counter will count down. <br/>
+	              If you have a semi-automatic blaster you can install a lever switch behind the trigger. Once the lever switch is pressed the counter will count down.
+	            </div>
+	          </div>
+	        </div> 
+
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingFour">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+	              Is there a wiring guide for the IR beam and power source? 
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+	            <div class="panel-body">
+	            	<h4>Arduino IR Beam Setup</h4>
+	                <a href="img/AmmoCounter-IR-Beam-Pinout.png" target="_blank"><img class="img-responsive img-thumbnail" style="margin-bottom:12px; max-width:400px;" src="img/AmmoCounter-IR-Beam-Pinout.png" alt="AmmoCounter IR Beam Pinout"></a>
+	              	<p>There is a working curcuit on <a href="https://123d.circuits.io/circuits/1537140-ammocounter-v1" target="_blank">123D Circuits</a>. It includes an IR beam, counter and reset buttons.</p>
+	            </div>
+	          </div>
+	        </div> 
+
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingFive">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+	              Where do I get the AmmoCounter Arduino code?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+	            <div class="panel-body">
+	              You can download the latest AmmoCounter code <a href="https://github.com/nathanieldeal/AmmoCounter-V1/archive/master.zip" target="_blank">here</a>. You can also stay up to date with new features or contribute to the code on <a href="https://github.com/nathanieldeal/AmmoCounter-V1" target="_blank">GitHub</a>.
+	            </div>
+	          </div>
+	        </div> 
+
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingSix">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+	                Can I buy a longer connector ribbon cable?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+	            <div class="panel-body">
+	              <p>Yes, if you need a longer ribbon cable for your mods, you can use any "2.54mm Pitch 16 Pin F/F IDC Connector" ribbon from Amazon or local retailer.</p>
+	              <p>Here are some suggestions:</p>
+	              <p>
+					<a href="http://amzn.com/B00843X43A" target="_blank">Uxcel® 12" (300mm) Rainbow Color Ribbon Flat Cable</a>
+					<br>
+					<a href="http://amzn.com/B00R1LRFUO" target="_blank">Uxcell® 43.3" (1100mm) Gray Ribbon Cable - 2 Pcs2</a>
+				  </p>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="panel panel-default">
+	          <div class="panel-heading" role="tab" id="headingSeven">
+	            <h4 class="panel-title">
+	              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+		              What are the dimensions of the LED and can I purchase a different color?
+	              </a>
+	            </h4>
+	          </div>
+	          <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
+	            <div class="panel-body">
+	              <p>The AmmoCounter uses a Common Anode 0.56 inch 2 digit 7 segment display. If you would like to know the dimensions, here is the <a href="http://ammocounter.com/downloads/common-anode-0.56-inch-2-digit-7-segment-display.pdf" target="_blank">data sheet.</a></p>
+	              <p>Additional colors can be found on eBay, Amazon or by checking the AmmoCounter shop for updates.</p>
+	            </div>
+	          </div>
+	        </div> 
+
+	      </div>
+	    </div>
+	    <div class="col-md-3">
+	    	<h3>Facebook</h3>
+	    	<div class="fb-page" data-href="https://www.facebook.com/ammocounter" data-small-header="false" data-adapt-container-width="true" height="600" tabs="timeline" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ammocounter"><a href="https://www.facebook.com/ammocounter">AmmoCounter</a></blockquote></div>
+	    	</div>
+	    </div>  
+    </div> <!-- FAQ Row -->
+
+    <hr>
+  </div> <!-- /container -->  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <figure class="text-center">
+          <img alt="This is an OPEN SOURCE + OPEN HARDWARE PROJECT" class="img-responsive" src="img/open-source.png">
+          <figcaption>This is an OPEN SOURCE + OPEN HARDWARE PROJECT</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6">
+      	<!-- Begin MailChimp Signup Form -->
+        <link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="http://nathanieldeal.us11.list-manage.com/subscribe/post?u=9fb6b66932b6027cf9d27161c&amp;id=0e721d4d93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <h4>Sign up to recieve product updates.</h4>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+        </label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9fb6b66932b6027cf9d27161c_0e721d4d93" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+
+  </div> <!-- /container -->  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2016-<script type="text/javascript">document.write(new Date().getFullYear());</script> - AmmoCounter.com</p>
+  	</div>    
+  </footer>
+        
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.0.min.js"><\/script>')</script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/youmax.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-73010078-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+body {
+    padding-bottom: 20px;
+    font-color: #555;
+}  
+
+h2 {
+    font-weight: 300; 
+    margin-bottom: 30px;
+}
+
+.panel-title > a {
+	color: #337ab7;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar .btn {
+	margin-top: 8px;
+}
+
+.navbar-brand {
+    padding: 10px 15px 15px 15px;
+}
+
+.carousel-control {
+    text-shadow: none;
+    background-image: none !important;
+    max-width: 40px;
+}
+
+#shop {
+    margin-top: 80px;
+}
+
+footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+}
+
+@media only screen and (min-width : 768px) {
+
+    .navbar-static-top {
+        min-height: 80px;
+    }
+
+    .navbar-nav {
+        float: right;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 80px;
+    }
+
+    .navbar-brand {
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
